@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Item } from '../../models/item.interface';
+import { Item } from '../../models/item.models';
 import { Data } from '../../../assets/data/data';
 
 @Component({
