@@ -1,1 +1,20 @@
+<div class="tasks-container">
+  <h2>Tasks</h2>
+
+  <form class="task-form" (ngSubmit)="submitForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="email" required>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div *ngIf="submitted" class="submitted-data">
+    <p>Submitted Name: {{ name }}</p>
+    <p>Submitted Email: {{ email }}</p>
+  </div>
+</div>
+
 <app-task></app-task>
