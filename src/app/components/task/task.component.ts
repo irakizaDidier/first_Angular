@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Item } from '../../models/item.models';
-import { Data } from '../../../assets/data/data';
 
 @Component({
   selector: 'app-task',
@@ -8,5 +7,5 @@ import { Data } from '../../../assets/data/data';
   styleUrls: ['./task.component.css'],
 })
 export class TaskComponent {
-  data: Item[] = Data;
+  @Input() data: Item[] = [];
 }
