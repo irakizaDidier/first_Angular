@@ -1,8 +1,6 @@
-<div class="card-container">
-  <div class="card">
-    <h3>{{ data.description }}</h3>
-    <img *ngIf="data.imageUrl" [src]="data.imageUrl"
-      alt="{{ data.description }}" class="card-image" />
-    <p>Category: {{ data.category }}</p>
-  </div>
+ <div class="card">
+  <h3>{{ data.description }}</h3>
+  <img *ngIf="data.imageUrl" [src]="data.imageUrl"
+    alt="{{ data.description }}" class="card-image" />
+  <p>Category: {{ data.category }}</p>
 </div>
