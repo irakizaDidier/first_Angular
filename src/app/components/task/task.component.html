@@ -1,8 +1,8 @@
 <div class="card-container">
-  <div *ngFor="let item of data" class="card">
-    <h3>{{ item.description }}</h3>
-    <img *ngIf="item.imageUrl" [src]="item.imageUrl"
-      alt="{{ item.description }}" class="card-image" />
-    <p>Category: {{ item.category }}</p>
+  <div class="card">
+    <h3>{{ data.description }}</h3>
+    <img *ngIf="data.imageUrl" [src]="data.imageUrl"
+      alt="{{ data.description }}" class="card-image" />
+    <p>Category: {{ data.category }}</p>
   </div>
 </div>

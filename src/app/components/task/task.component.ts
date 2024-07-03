@@ -7,5 +7,5 @@ import { Item } from '../../models/item.models';
   styleUrls: ['./task.component.css'],
 })
 export class TaskComponent {
-  @Input() data: Item[] = [];
+  @Input() data!: Item;
 }

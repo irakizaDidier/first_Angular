@@ -8,7 +8,7 @@ import { Data } from '../../../assets/data/data';
   styleUrls: ['./tasks.component.css'],
 })
 export class TasksComponent {
-  data: Item[] = Data;
+  items: Item[] = Data;
 
   name: string = '';
   email: string = '';

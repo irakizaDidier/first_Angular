@@ -15,4 +15,8 @@
     <p>Submitted Email: {{ email }}</p>
   </div>
 </div>
-<app-task [data]="data"></app-task>
+<div class="card-container">
+  <div *ngFor="let item of items">
+    <app-task [data]="item"></app-task>
+  </div>
+</div>
